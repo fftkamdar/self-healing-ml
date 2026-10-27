@@ -1,0 +1,130 @@
+FEATURE-LEVEL ROOT-CAUSE DRIFT DIAGNOSIS
+=======================================================
+PSI threshold: 0.25
+Features analysed: 19
+Features with moderate or high drift: 2
+High-drift features: ['MonthlyCharges', 'tenure']
+Moderate-drift features: []
+
+OVERALL INTERPRETATION
+Drift is concentrated in a small number of features.
+
+FEATURE DETAILS
+-------------------------------------------------------
+Feature: MonthlyCharges
+PSI: 1.390792
+Drift level: High
+Direction: Upward shift
+Diagnosis: Upward shift. The mean changed by +17.22%. Median changed from 70.500 to 83.730.
+
+Feature: tenure
+PSI: 0.432037
+Drift level: High
+Direction: Upward shift
+Diagnosis: Upward shift. The mean changed by +27.62%. Median changed from 29.000 to 43.500.
+
+Feature: TotalCharges
+PSI: 0.011689
+Drift level: Low
+Direction: Downward shift
+Diagnosis: Downward shift. The mean changed by -1.33%. Median changed from 1398.125 to 1436.800.
+
+Feature: StreamingTV
+PSI: 0.006454
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'No'. Its share changed from 39.5% to 42.3%.
+
+Feature: MultipleLines
+PSI: 0.002005
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'No'. Its share changed from 47.7% to 48.9%.
+
+Feature: PhoneService
+PSI: 0.001877
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'Yes'. Its share changed from 90.1% to 91.3%.
+
+Feature: TechSupport
+PSI: 0.001835
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'No'. Its share changed from 49.2% to 50.0%.
+
+Feature: PaymentMethod
+PSI: 0.001668
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'Electronic check'. Its share changed from 33.6% to 33.8%.
+
+Feature: Dependents
+PSI: 0.001652
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'No'. Its share changed from 70.2% to 68.3%.
+
+Feature: Partner
+PSI: 0.001364
+Drift level: Low
+Direction: Most common category changed
+Diagnosis: The most common category changed from 'No' to 'Yes'. Its share changed from 51.6% to 50.3%.
+
+Feature: DeviceProtection
+PSI: 0.001344
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'No'. Its share changed from 43.9% to 44.5%.
+
+Feature: OnlineSecurity
+PSI: 0.000924
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'No'. Its share changed from 49.6% to 49.7%.
+
+Feature: OnlineBackup
+PSI: 0.000805
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'No'. Its share changed from 43.3% to 42.2%.
+
+Feature: InternetService
+PSI: 0.000783
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'Fiber optic'. Its share changed from 44.1% to 44.0%.
+
+Feature: StreamingMovies
+PSI: 0.000685
+Drift level: Low
+Direction: Most common category changed
+Diagnosis: The most common category changed from 'No' to 'Yes'. Its share changed from 39.4% to 38.9%.
+
+Feature: gender
+PSI: 0.000396
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'Male'. Its share changed from 50.3% to 51.3%.
+
+Feature: Contract
+PSI: 0.000340
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'Month-to-month'. Its share changed from 55.1% to 56.0%.
+
+Feature: PaperlessBilling
+PSI: 0.000064
+Drift level: Low
+Direction: Most common category unchanged
+Diagnosis: The most common category remains 'Yes'. Its share changed from 59.1% to 59.5%.
+
+Feature: SeniorCitizen
+PSI: 0.000000
+Drift level: Low
+Direction: Upward shift
+Diagnosis: Upward shift. The mean changed by +11.34%. Median changed from 0.000 to 0.000.
+
+IMPORTANT LIMITATION
+PSI and distribution summaries identify changes in input data. They do not, by themselves, prove that model performance has degraded or establish a causal root cause.
+This experiment uses synthetically shifted data, so its findings should not be interpreted as evidence of live production drift.

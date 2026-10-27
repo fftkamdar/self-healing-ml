@@ -1,0 +1,4 @@
+Model,Type,Accuracy,Precision,Recall,F1-score,ROC-AUC,Threshold,Dominance_vs_canonical,Dominance_vs_V9
+SH-DAS V13,Proposed,0.7672107877927609,0.5465587044534413,0.7219251336898396,0.6221198156682027,0.8356092898292385,0.34000000000000014,1.0,1.0
+SH-DAS V9,Previous proposed,0.7864,0.5855,0.6684,0.6242,0.8441,0.48,,
+Canonical benchmark maximum,Frozen five-model reference,0.791341,0.63986,0.81016,0.624742,0.835577,,,

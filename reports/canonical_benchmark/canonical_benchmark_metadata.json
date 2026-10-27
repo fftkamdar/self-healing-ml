@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "train_size": 4225,
+  "validation_size": 1409,
+  "test_size": 1409,
+  "feature_count": 19,
+  "features": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "dataset": "C:\\Users\\DELL\\Desktop\\Self_Healing_ML\\data\\raw\\Telco-Customer-Churn.csv",
+  "runtime_seconds": 8.69960069656372
+}

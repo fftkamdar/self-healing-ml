@@ -1,0 +1,7 @@
+Scenario,Maximum_PSI,DRA_Score,DRA_Trigger,Top_Aligned_Feature
+No drift,0.012391962037189872,0.04257722690680231,False,tenure
+Mild tenure drift,0.07915998152477782,0.2423782876553116,False,tenure
+Moderate tenure drift,0.23933545679656518,0.7216980295138982,True,tenure
+Strong tenure drift,0.4250626655234817,0.753611317653899,True,tenure
+Strong MonthlyCharges drift,1.4730583955221603,0.21965881868553924,False,MonthlyCharges
+Strong important-feature drift,1.4730583955221603,0.9306929094326359,True,tenure

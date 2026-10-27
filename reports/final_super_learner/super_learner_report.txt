@@ -1,0 +1,30 @@
+SH-DAS FINAL SUPER-LEARNER
+================================================================================
+
+Selected meta-model: Meta_Logistic_Balanced
+Threshold: 0.5800
+
+FINAL TEST METRICS
+--------------------------------------------------------------------------------
+Accuracy: 0.777857 (canonical maximum: 0.791341)
+Precision: 0.561616 (canonical maximum: 0.639860)
+Recall: 0.743316 (canonical maximum: 0.810160)
+F1-score: 0.639816 (canonical maximum: 0.624742)
+ROC-AUC: 0.846113 (canonical maximum: 0.835577)
+
+Dominance: 2/5
+Beats all five: NO
+
+Super-Learner vs V9: 3/5
+
+BASE MODELS
+--------------------------------------------------------------------------------
+- lr
+- gb
+- rf
+- svm
+- cat
+- lgb
+- xgb
+
+Runtime: 223.01 seconds

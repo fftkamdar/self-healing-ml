@@ -1,0 +1,21 @@
+{
+  "model_name": "SH-DAS V3",
+  "full_name": "Self-Healing Drift-Aware Stacking",
+  "base_models": [
+    "Logistic Regression",
+    "Decision Tree",
+    "Random Forest",
+    "Gradient Boosting",
+    "Support Vector Machine"
+  ],
+  "meta_model": "Logistic Regression",
+  "drifted_features": [
+    "tenure",
+    "MonthlyCharges"
+  ],
+  "selected_threshold": 0.6000000000000003,
+  "adaptation_size": 1409,
+  "evaluation_size": 1409,
+  "meta_feature_count": 29,
+  "evaluation_protocol": "Base models trained on training data. Meta-model trained only on base-model predictions and drift-aware features from adaptation data. Final metrics calculated on a separate held-out drifted evaluation set."
+}

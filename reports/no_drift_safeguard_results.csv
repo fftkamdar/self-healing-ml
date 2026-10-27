@@ -1,0 +1,3 @@
+scenario,max_psi,high_drift_features,decision
+No-drift control,0.023344950865727274,,SKIP_RETRAINING
+Synthetic drift,2.1720537139841767,"tenure, MonthlyCharges",RETRAINING_CONSIDERED

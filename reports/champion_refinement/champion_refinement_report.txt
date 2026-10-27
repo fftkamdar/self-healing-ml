@@ -1,0 +1,21 @@
+SH-DAS CHAMPION REFINEMENT
+================================================================================
+
+Meta-model: Meta_LR
+Variant: raw
+Threshold: 0.3400
+
+FINAL TEST METRICS
+--------------------------------------------------------------------------------
+Accuracy: 0.770759 (canonical maximum: 0.791341)
+Precision: 0.552795 (canonical maximum: 0.639860)
+Recall: 0.713904 (canonical maximum: 0.810160)
+F1-score: 0.623104 (canonical maximum: 0.624742)
+ROC-AUC: 0.838154 (canonical maximum: 0.835577)
+
+Canonical dominance: 1/5
+Beats all five: NO
+
+Refinement vs Super-Learner: 0/5
+
+Runtime: 71.27 seconds

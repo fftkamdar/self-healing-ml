@@ -1,0 +1,20 @@
+{
+  "model_name": "SH-DAE V2",
+  "full_name": "Self-Healing Drift-Aware Ensemble",
+  "base_models": [
+    "Logistic Regression",
+    "Decision Tree",
+    "Random Forest",
+    "Gradient Boosting",
+    "Support Vector Machine"
+  ],
+  "drifted_features": [
+    "tenure",
+    "MonthlyCharges"
+  ],
+  "drift_penalty": 0.5,
+  "permutation_repeats": 7,
+  "selected_threshold": 0.45000000000000023,
+  "weighting_strategy": "Adaptation F1 + ROC-AUC + Recall with mild drift-exposure penalty",
+  "evaluation_protocol": "Weights and threshold selected using training/adaptation data; final metrics measured on separate held-out drifted evaluation data."
+}

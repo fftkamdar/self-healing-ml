@@ -1,0 +1,4 @@
+Model,Type,Accuracy,Precision,Recall,F1-score,ROC-AUC,Threshold,Dominance_vs_existing
+SH-DAS V11,Proposed,0.7750177430801988,0.5634743875278396,0.6764705882352942,0.6148238153098421,0.8334082513110646,0.6200000000000003,0.0
+SH-DAS V9,Previous proposed candidate,0.7864,0.5855,0.6684,0.6242,0.8441,0.48,2.0
+Existing five-model reference,Reference maximum,0.8013,0.6679,0.7968,0.6179,0.843,,

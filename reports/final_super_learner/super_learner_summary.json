@@ -1,0 +1,50 @@
+{
+  "selected_meta_model": "Meta_Logistic_Balanced",
+  "threshold": 0.5800000000000003,
+  "base_models": [
+    "lr",
+    "gb",
+    "rf",
+    "svm",
+    "cat",
+    "lgb",
+    "xgb"
+  ],
+  "base_oof_auc": {
+    "lr": 0.846145604135877,
+    "gb": 0.8489924133032635,
+    "rf": 0.8433350760083747,
+    "svm": 0.8230663377401194,
+    "cat": 0.8483147901396376,
+    "lgb": 0.8453668142418838,
+    "xgb": 0.8492698945748937
+  },
+  "test_metrics": {
+    "Accuracy": 0.7778566359119943,
+    "Precision": 0.5616161616161616,
+    "Recall": 0.7433155080213903,
+    "F1-score": 0.6398158803222095,
+    "ROC-AUC": 0.8461133069828721
+  },
+  "canonical_reference": {
+    "Accuracy": 0.791341,
+    "Precision": 0.63986,
+    "Recall": 0.81016,
+    "F1-score": 0.624742,
+    "ROC-AUC": 0.835577
+  },
+  "v9_reference": {
+    "Accuracy": 0.7864,
+    "Precision": 0.5855,
+    "Recall": 0.6684,
+    "F1-score": 0.6242,
+    "ROC-AUC": 0.8441
+  },
+  "dominance_count": 2,
+  "beats_all_five": false,
+  "super_learner_vs_v9_dominance": 3,
+  "development_size": 5634,
+  "test_size": 1409,
+  "seed": 42,
+  "runtime_seconds": 223.00813841819763
+}

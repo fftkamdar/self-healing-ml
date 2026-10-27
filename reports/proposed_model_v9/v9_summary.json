@@ -1,0 +1,58 @@
+{
+  "model": "SH-DAS V9",
+  "selected_model_description": "Probability blend of Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, Support Vector Machine, HistGradientBoosting, AdaBoost",
+  "threshold": 0.48000000000000026,
+  "weights": {
+    "Logistic Regression": 0.10713876383161829,
+    "Decision Tree": 0.07261844780236792,
+    "Random Forest": 0.10362010889378909,
+    "Gradient Boosting": 0.06494919948231166,
+    "Support Vector Machine": 0.08429681635518568,
+    "HistGradientBoosting": 0.21830877128891943,
+    "AdaBoost": 0.3451182089393799
+  },
+  "validation_metrics": {
+    "Accuracy": 0.8041163946061036,
+    "Precision": 0.6172248803827751,
+    "Recall": 0.6898395721925134,
+    "F1-score": 0.6515151515151515,
+    "ROC-AUC": 0.8405086672350099
+  },
+  "test_metrics": {
+    "Accuracy": 0.7863733144073811,
+    "Precision": 0.585480093676815,
+    "Recall": 0.6684491978609626,
+    "F1-score": 0.6242197253433208,
+    "ROC-AUC": 0.8440776046914154
+  },
+  "validation_reference_maxima": {
+    "Accuracy": 0.8034066713981547,
+    "Precision": 0.6701754385964912,
+    "Recall": 0.7887700534759359,
+    "F1-score": 0.6251366120218579,
+    "ROC-AUC": 0.8377844945619882
+  },
+  "test_reference_maxima": {
+    "Accuracy": 0.801277501774308,
+    "Precision": 0.6678571428571428,
+    "Recall": 0.7967914438502673,
+    "F1-score": 0.6179401993355482,
+    "ROC-AUC": 0.8430377948280761
+  },
+  "test_dominance": {
+    "Accuracy": false,
+    "Precision": false,
+    "Recall": false,
+    "F1-score": true,
+    "ROC-AUC": true
+  },
+  "dominance_count": 2,
+  "all_metrics_beat_all_five": false,
+  "selection_protocol": "Model and threshold selected using training and validation data only. Held-out test set evaluated once for final comparison.",
+  "feature_engineering": [
+    "AverageMonthlySpend",
+    "ServiceCount",
+    "IsMonthToMonth",
+    "FamilySupportCount"
+  ]
+}

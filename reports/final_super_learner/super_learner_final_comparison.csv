@@ -1,0 +1,4 @@
+Model,Type,Accuracy,Precision,Recall,F1-score,ROC-AUC,Threshold,CanonicalDominance
+SH-DAS Super-Learner,Final proposed model,0.7778566359119943,0.5616161616161616,0.7433155080213903,0.6398158803222095,0.8461133069828721,0.5800000000000003,2.0
+SH-DAS V9,Previous proposed model,0.7864,0.5855,0.6684,0.6242,0.8441,0.48,
+Canonical Maximum,Frozen five-model benchmark,0.791341,0.63986,0.81016,0.624742,0.835577,,

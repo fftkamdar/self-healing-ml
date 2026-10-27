@@ -1,0 +1,32 @@
+
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+.streamlit/secrets.toml
+.git/
+
+# Local development and repair scripts
+add_psi_dra_comparison.py
+apply_dra_integration.py
+fix_*.py
+insert_dra_section.py
+patch_*.py
+repair_*.py
+src/build_v8_champion_backup.py
+src/build_v8_champion_backup_before_v9.py
+src/dashboard_backup_before_comparison_tables.py
+src/dashboard_backup_before_v8.py
+src/dashboard_before_repair.py
+src/research_contribution_page_backup.py
+
+# Large experimental artifacts excluded from online deployment
+/reports/proposed_model_v8/sh_das_v8_candidate.joblib
+/reports/proposed_model_v11/sh_das_v11_model_bundle.joblib
+/models/benchmark/random_forest.joblib
+/reports/final_super_learner/sh_das_super_learner_bundle.joblib
+/reports/champion_refinement/sh_das_champion_refinement_bundle.joblib
+/reports/final_drift_robustness_benchmark/sh_das_adaptive_drift_model.joblib
+

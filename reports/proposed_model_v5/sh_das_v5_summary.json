@@ -1,0 +1,32 @@
+{
+  "dataset_records": 7043,
+  "feature_count": 19,
+  "training_records": 4225,
+  "adaptation_records": 1409,
+  "evaluation_records": 1409,
+  "selected_candidate": "Meta Logistic C=0.3",
+  "selected_threshold": 0.62,
+  "v5_metrics": {
+    "Accuracy": 0.6962384669978708,
+    "Precision": 0.46175637393767704,
+    "Recall": 0.8716577540106952,
+    "F1-score": 0.6037037037037037,
+    "ROC-AUC": 0.8442765248391846
+  },
+  "metric_deltas_vs_best_conventional": {
+    "Accuracy_delta_vs_best_conventional": -0.08445706174591905,
+    "Precision_delta_vs_best_conventional": -0.11261433544447402,
+    "Recall_delta_vs_best_conventional": 0.03208556149732622,
+    "F1-score_delta_vs_best_conventional": -0.024487195297406172,
+    "ROC-AUC_delta_vs_best_conventional": 0.001351106977705463
+  },
+  "drift_transforms": {
+    "tenure": 1.5,
+    "MonthlyCharges": 1.2
+  },
+  "selection_rule": [
+    "Maximize adaptation F1",
+    "Use ROC-AUC and Recall as tie-break information",
+    "Do not use final evaluation records for candidate selection"
+  ]
+}

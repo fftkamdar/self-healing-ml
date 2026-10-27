@@ -1,0 +1,38 @@
+{
+  "model_name": "SH-DAS V7",
+  "base_models": [
+    "Logistic Regression",
+    "SVM",
+    "Gradient Boosting"
+  ],
+  "weights": {
+    "Logistic Regression": 0.4,
+    "SVM": 0.3,
+    "Gradient Boosting": 0.3
+  },
+  "focus_model": "Gradient Boosting",
+  "drift_strength": 0.2,
+  "threshold": 0.35,
+  "adaptation_metrics": {
+    "Accuracy": 0.7849538679914834,
+    "Precision": 0.5741127348643006,
+    "Recall": 0.7352941176470589,
+    "F1-score": 0.6447831184056272,
+    "ROC-AUC": 0.8387597199617659
+  },
+  "final_metrics": {
+    "Accuracy": 0.7700496806245565,
+    "Precision": 0.5496031746031746,
+    "Recall": 0.7406417112299465,
+    "F1-score": 0.6309794988610479,
+    "ROC-AUC": 0.8443695264667133
+  },
+  "selection_rule": [
+    "5-fold adaptation cross-validation",
+    "Primary objective: adaptation F1-score",
+    "Tie-break: adaptation ROC-AUC",
+    "Final tie-break: adaptation Recall",
+    "Threshold selected from adaptation OOF predictions",
+    "Final evaluation set never used for selection"
+  ]
+}

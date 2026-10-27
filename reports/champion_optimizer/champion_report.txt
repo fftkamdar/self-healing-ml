@@ -1,0 +1,28 @@
+SH-DAS CHAMPION
+================================================================================
+
+SELECTED ENSEMBLE
+--------------------------------------------------------------------------------
+LR: 0.1000
+GB: 0.6000
+XGB: 0.1000
+CAT: 0.2000
+LGB: -0.0000
+
+Threshold: 0.3700
+
+FINAL TEST METRICS
+--------------------------------------------------------------------------------
+Accuracy: 0.779986 (canonical target: 0.791341)
+Precision: 0.566390 (canonical target: 0.639860)
+Recall: 0.729947 (canonical target: 0.810160)
+F1-score: 0.637850 (canonical target: 0.624742)
+ROC-AUC: 0.846589 (canonical target: 0.835577)
+
+Canonical dominance: 2/5
+Beats all five: NO
+
+Champion vs Super-Learner: 3/5
+
+Feature count: 34
+Runtime: 823.28 seconds

@@ -1,0 +1,5 @@
+strategy,model_selected,accuracy,precision,recall,f1,roc_auc
+Baseline - Keep Existing Model,Baseline,0.7816,0.5846,0.6096,0.5969,0.835
+Full Retraining,Retrained Candidate,0.7688,0.5469,0.7487,0.6321,0.8356
+Selective Retraining - Exclude Shifted Features,Selective Candidate,0.7418,0.5092,0.7433,0.6043,0.8251
+Performance-Aware Selection,Retrained Candidate,0.7688,0.5469,0.7487,0.6321,0.8356

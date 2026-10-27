@@ -1,0 +1,34 @@
+{
+  "version": "V10",
+  "selected_model": "CalibratedLinearSVM",
+  "selected_threshold": 0.47999999999999987,
+  "engineered_features": [
+    "AverageMonthlySpend",
+    "ServiceCount",
+    "IsMonthToMonth",
+    "FamilySupportCount",
+    "TenureChargeInteraction"
+  ],
+  "test_metrics": {
+    "Accuracy": 0.7842441447835344,
+    "Precision": 0.6011560693641619,
+    "Recall": 0.5561497326203209,
+    "F1-score": 0.5777777777777777,
+    "ROC-AUC": 0.8300705262342091
+  },
+  "existing_reference": {
+    "Accuracy": 0.8013,
+    "Precision": 0.6679,
+    "Recall": 0.7968,
+    "F1-score": 0.6179,
+    "ROC-AUC": 0.843
+  },
+  "dominance_count": 0,
+  "beats_all_five": false,
+  "mean_margin": -0.0755003498439992,
+  "balanced_score": 0.6594688194842666,
+  "train_size": 4225,
+  "validation_size": 1409,
+  "test_size": 1409,
+  "runtime_seconds": 15.33143162727356
+}

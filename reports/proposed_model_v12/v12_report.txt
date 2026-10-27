@@ -1,0 +1,26 @@
+SH-DAS V12 FINAL REPORT
+================================================================================
+
+Selected model: XGBoost_RecallFocused
+Threshold: 0.60
+
+FINAL TEST METRICS
+--------------------------------------------------------------------------------
+Accuracy: 0.768630 (existing reference: 0.801300)
+Precision: 0.550633 (existing reference: 0.667900)
+Recall: 0.697861 (existing reference: 0.796800)
+F1-score: 0.615566 (existing reference: 0.617900)
+ROC-AUC: 0.832733 (existing reference: 0.843000)
+
+Dominance: 0/5
+Beats all five: NO
+
+V12 vs V9 dominance: 1/5
+
+ENGINEERED FEATURES
+--------------------------------------------------------------------------------
+- AverageMonthlySpend
+- ServiceCount
+- IsMonthToMonth
+- FamilySupportCount
+- TenureChargeInteraction

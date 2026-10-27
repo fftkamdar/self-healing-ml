@@ -1,0 +1,70 @@
+{
+  "version": "V14",
+  "selected_model": "CatBoost_PrecisionBalanced",
+  "selected_threshold": 0.3800000000000001,
+  "selected_parameters": {
+    "iterations": 500,
+    "depth": 5,
+    "learning_rate": 0.04,
+    "l2_leaf_reg": 9.0,
+    "random_strength": 1.2,
+    "bagging_temperature": 0.5,
+    "class_weights": [
+      1.0,
+      1.2
+    ]
+  },
+  "categorical_features": [
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "engineered_features": [
+    "AverageMonthlySpend",
+    "TenureChargeInteraction",
+    "IsMonthToMonth",
+    "ServiceCount",
+    "FamilySupportCount"
+  ],
+  "test_metrics": {
+    "Accuracy": 0.758694109297374,
+    "Precision": 0.5342741935483871,
+    "Recall": 0.7085561497326203,
+    "F1-score": 0.6091954022988506,
+    "ROC-AUC": 0.8323710248262679
+  },
+  "canonical_reference": {
+    "Accuracy": 0.791341,
+    "Precision": 0.63986,
+    "Recall": 0.81016,
+    "F1-score": 0.624742,
+    "ROC-AUC": 0.835577
+  },
+  "v9_reference": {
+    "Accuracy": 0.7864,
+    "Precision": 0.5855,
+    "Recall": 0.6684,
+    "F1-score": 0.6242,
+    "ROC-AUC": 0.8441
+  },
+  "dominance_count": 0,
+  "beats_all_five": false,
+  "v14_vs_v9_dominance": 1,
+  "train_size": 4225,
+  "validation_size": 1409,
+  "development_size": 5634,
+  "test_size": 1409,
+  "runtime_seconds": 390.2515797615051
+}

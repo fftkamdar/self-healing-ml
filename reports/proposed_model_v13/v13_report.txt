@@ -1,0 +1,28 @@
+SH-DAS V13 FINAL REPORT
+================================================================================
+
+Selected approach: GB_Conservative
+Threshold: 0.34
+
+FINAL TEST METRICS
+--------------------------------------------------------------------------------
+Accuracy: 0.767211 (canonical maximum: 0.791341)
+Precision: 0.546559 (canonical maximum: 0.639860)
+Recall: 0.721925 (canonical maximum: 0.810160)
+F1-score: 0.622120 (canonical maximum: 0.624742)
+ROC-AUC: 0.835609 (canonical maximum: 0.835577)
+
+Dominance: 1/5
+Beats all five: NO
+
+V13 vs V9 dominance: 1/5
+
+ENGINEERED FEATURES
+--------------------------------------------------------------------------------
+- AverageMonthlySpend
+- TenureChargeInteraction
+- IsMonthToMonth
+- ServiceCount
+- FamilySupportCount
+
+Runtime: 43.24 seconds

@@ -1,0 +1,43 @@
+{
+  "experiment": "Controlled synthetic drift experiment",
+  "dataset": "Telco-Customer-Churn.csv",
+  "random_state": 42,
+  "adaptation_rows": 704,
+  "evaluation_rows": 705,
+  "drift": {
+    "tenure_multiplier": 1.5,
+    "tenure_upper_clip": 72,
+    "monthly_charges_multiplier": 1.2,
+    "monthly_charges_upper_clip": 120
+  },
+  "important_limitation": "Feature drift is synthetically applied while original labels are retained. Results do not establish how a real production model would perform under real drift.",
+  "results": [
+    {
+      "condition": "A - No drift, no retraining",
+      "rows_evaluated": 705,
+      "accuracy": 0.724822695035461,
+      "precision": 0.4879725085910653,
+      "recall": 0.7593582887700535,
+      "f1": 0.5941422594142259,
+      "roc_auc": 0.836454483513307
+    },
+    {
+      "condition": "B - Drift, no retraining",
+      "rows_evaluated": 705,
+      "accuracy": 0.7929078014184398,
+      "precision": 0.5990338164251208,
+      "recall": 0.6631016042780749,
+      "f1": 0.6294416243654822,
+      "roc_auc": 0.8433609315962257
+    },
+    {
+      "condition": "C - Drift, with retraining",
+      "rows_evaluated": 705,
+      "accuracy": 0.750354609929078,
+      "precision": 0.5205992509363296,
+      "recall": 0.7433155080213903,
+      "f1": 0.6123348017621145,
+      "roc_auc": 0.8404290463113993
+    }
+  ]
+}

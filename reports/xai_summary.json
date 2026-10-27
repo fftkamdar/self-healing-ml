@@ -1,0 +1,37 @@
+{
+    "explanation_method": "Logistic Regression coefficients and transformed-space linear contributions",
+    "baseline_top_features": [
+        "numeric__tenure",
+        "categorical__Contract_Two year",
+        "categorical__InternetService_Fiber optic",
+        "numeric__MonthlyCharges",
+        "categorical__Contract_Month-to-month",
+        "categorical__InternetService_DSL",
+        "numeric__TotalCharges",
+        "categorical__StreamingMovies_Yes",
+        "categorical__DeviceProtection_No internet service",
+        "categorical__InternetService_No"
+    ],
+    "candidate_top_features": [
+        "numeric__tenure",
+        "categorical__Contract_Two year",
+        "categorical__Contract_Month-to-month",
+        "numeric__MonthlyCharges",
+        "numeric__TotalCharges",
+        "categorical__PhoneService_Yes",
+        "categorical__OnlineSecurity_Yes",
+        "categorical__TechSupport_Yes",
+        "categorical__MultipleLines_No",
+        "categorical__PaymentMethod_Electronic check"
+    ],
+    "sample_baseline_prediction": 0,
+    "sample_baseline_churn_probability": 0.3714787556101196,
+    "sample_candidate_prediction": 0,
+    "sample_candidate_churn_probability": 0.48723838339139647,
+    "limitations": [
+        "Coefficients describe the fitted logistic model and are not proof of causation.",
+        "One-hot encoded categories appear as transformed features rather than being automatically grouped.",
+        "Single-record contributions are on the log-odds scale, not direct probability changes.",
+        "The explained observation is from a synthetic drift experiment, not live production data."
+    ]
+}

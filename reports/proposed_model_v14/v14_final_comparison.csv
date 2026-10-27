@@ -1,0 +1,4 @@
+Model,Type,Accuracy,Precision,Recall,F1-score,ROC-AUC,Threshold,Dominance_vs_canonical,Dominance_vs_V9
+SH-DAS V14,CatBoost Proposed,0.758694109297374,0.5342741935483871,0.7085561497326203,0.6091954022988506,0.8323710248262679,0.3800000000000001,0.0,1.0
+SH-DAS V9,Previous proposed,0.7864,0.5855,0.6684,0.6242,0.8441,0.48,,
+Canonical Maximum,Frozen five-model reference,0.791341,0.63986,0.81016,0.624742,0.835577,,,

@@ -1,0 +1,36 @@
+{
+  "dataset": "C:\\Users\\DELL\\Desktop\\Self_Healing_ML\\data\\controlled\\concept_drift_telco_like_12000.csv",
+  "total_records": 12000,
+  "pre_drift_train": 8000,
+  "adaptation_window": 2000,
+  "post_drift_test": 2000,
+  "old_churn_rate": 0.561625,
+  "new_churn_rate": 0.548,
+  "target_rate_change": -0.013624999999999998,
+  "drift_trigger": true,
+  "adaptive_threshold": 0.4400000000000001,
+  "frozen_reference_max": {
+    "Accuracy": 0.4005,
+    "Precision": 0.44844517184942717,
+    "Recall": 0.5102420856610801,
+    "F1-score": 0.47735191637630664,
+    "ROC-AUC": 0.3437911000639502
+  },
+  "sh_das_metrics": {
+    "Accuracy": 0.8165,
+    "Precision": 0.8008510638297872,
+    "Recall": 0.8761638733705773,
+    "F1-score": 0.8368163628279235,
+    "ROC-AUC": 0.8987817287466164
+  },
+  "dominance_count": 5,
+  "beats_all_five": true,
+  "feature_shift": {
+    "tenure": 0.4436250000000044,
+    "MonthlyCharges": 1.144425302579151,
+    "TotalCharges": 95.55652534571618,
+    "SupportServiceCount": -0.011624999999999996,
+    "ServiceCount": -0.07937499999999975
+  },
+  "runtime_seconds": 19.21344017982483
+}

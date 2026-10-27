@@ -1,0 +1,46 @@
+SH-DAS V15 FINAL REPORT
+================================================================================
+
+Selected model: LGBM_PrecisionBalanced
+Threshold: 0.315
+
+FINAL TEST METRICS
+--------------------------------------------------------------------------------
+Accuracy: 0.759404 (canonical maximum: 0.791341)
+Precision: 0.535934 (canonical maximum: 0.639860)
+Recall: 0.697861 (canonical maximum: 0.810160)
+F1-score: 0.606272 (canonical maximum: 0.624742)
+ROC-AUC: 0.829996 (canonical maximum: 0.835577)
+
+Dominance: 0/5
+Beats all five: NO
+
+V15 vs V9 dominance: 1/5
+
+ENGINEERED FEATURES
+--------------------------------------------------------------------------------
+- AverageMonthlySpend
+- TenureChargeInteraction
+- IsMonthToMonth
+- ServiceCount
+- FamilySupportCount
+
+NATIVE CATEGORICAL FEATURES
+--------------------------------------------------------------------------------
+- gender
+- Partner
+- Dependents
+- PhoneService
+- MultipleLines
+- InternetService
+- OnlineSecurity
+- OnlineBackup
+- DeviceProtection
+- TechSupport
+- StreamingTV
+- StreamingMovies
+- Contract
+- PaperlessBilling
+- PaymentMethod
+
+Runtime: 30.23 seconds

@@ -1,0 +1,12 @@
+{
+    "random_state": 42,
+    "high_drift_psi_threshold": 0.25,
+    "contribution_threshold": 0.03,
+    "dataset": "data\\raw\\Telco-Customer-Churn.csv",
+    "baseline_model": "models\\baseline_churn_pipeline.joblib",
+    "policy_full": "Retrain when maximum PSI >= threshold",
+    "policy_selective": "Retrain only when high drift overlaps with meaningful feature contribution",
+    "low_contribution_feature": "TotalCharges",
+    "high_drift_low_contribution_multiplier": 1.7500000000000007,
+    "high_drift_low_contribution_max_or_achieved_psi": 0.2779554533907671
+}

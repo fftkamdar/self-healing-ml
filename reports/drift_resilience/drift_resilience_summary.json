@@ -1,0 +1,27 @@
+{
+  "experiment": "Drift Resilience Benchmark",
+  "dataset": "IBM Telco Customer Churn",
+  "base_models": [
+    "Logistic Regression",
+    "Decision Tree",
+    "Random Forest",
+    "Gradient Boosting",
+    "Support Vector Machine"
+  ],
+  "proposed_model": "SH-DAS V4",
+  "drift_features": [
+    "tenure",
+    "MonthlyCharges"
+  ],
+  "drift_description": {
+    "tenure": "multiply by 1.5, cap at 72",
+    "MonthlyCharges": "multiply by 1.2, cap at 120"
+  },
+  "training_records": 4225,
+  "adaptation_records": 1409,
+  "evaluation_records": 1409,
+  "same_evaluation_rows": true,
+  "selected_meta_model": "Meta Random Forest",
+  "selected_threshold": 0.5500000000000003,
+  "interpretation": "Performance retention measures the percentage of the no-drift metric retained under simulated drift. Higher retention indicates less relative degradation for that metric. This is an experiment-specific resilience measure."
+}

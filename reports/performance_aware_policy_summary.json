@@ -1,0 +1,82 @@
+{
+    "psi_threshold": 0.25,
+    "f1_drop_guardrail": 0.03,
+    "roc_auc_drop_guardrail": 0.02,
+    "reference_metrics": {
+        "accuracy": 0.7381121362668559,
+        "f1": 0.6136125654450262,
+        "roc_auc": 0.8412978893797307
+    },
+    "results": [
+        {
+            "scenario": "No shift",
+            "tenure_multiplier": 1.0,
+            "monthly_charges_multiplier": 1.0,
+            "max_psi": 0.012492467623565122,
+            "high_drift_features": "",
+            "reference_f1": 0.6136125654450262,
+            "current_f1": 0.6136125654450262,
+            "f1_drop": 0.0,
+            "reference_roc_auc": 0.8412978893797307,
+            "current_roc_auc": 0.8412978893797307,
+            "roc_auc_drop": 0.0,
+            "drift_detected": false,
+            "performance_guardrail_breached": false,
+            "decision": "SKIP_RETRAINING"
+        },
+        {
+            "scenario": "Mild shift",
+            "tenure_multiplier": 1.1,
+            "monthly_charges_multiplier": 1.05,
+            "max_psi": 0.2583191791160502,
+            "high_drift_features": "MonthlyCharges",
+            "reference_f1": 0.6136125654450262,
+            "current_f1": 0.612691466083151,
+            "f1_drop": 0.0009210993618752328,
+            "reference_roc_auc": 0.8412978893797307,
+            "current_roc_auc": 0.8426334960861814,
+            "roc_auc_drop": -0.0013356067064507204,
+            "drift_detected": true,
+            "performance_guardrail_breached": false,
+            "decision": "MONITOR_NO_AUTOMATIC_RETRAINING"
+        },
+        {
+            "scenario": "Moderate shift",
+            "tenure_multiplier": 1.3,
+            "monthly_charges_multiplier": 1.1,
+            "max_psi": 1.1662937143974434,
+            "high_drift_features": "MonthlyCharges",
+            "reference_f1": 0.6136125654450262,
+            "current_f1": 0.6189917936694022,
+            "f1_drop": -0.005379228224375976,
+            "reference_roc_auc": 0.8412978893797307,
+            "current_roc_auc": 0.8430571701671447,
+            "roc_auc_drop": -0.0017592807874139416,
+            "drift_detected": true,
+            "performance_guardrail_breached": false,
+            "decision": "MONITOR_NO_AUTOMATIC_RETRAINING"
+        },
+        {
+            "scenario": "Stronger shift",
+            "tenure_multiplier": 1.5,
+            "monthly_charges_multiplier": 1.2,
+            "max_psi": 1.3500669874738935,
+            "high_drift_features": "tenure, MonthlyCharges",
+            "reference_f1": 0.6136125654450262,
+            "current_f1": 0.6124031007751938,
+            "f1_drop": 0.0012094646698324052,
+            "reference_roc_auc": 0.8412978893797307,
+            "current_roc_auc": 0.8420522359141284,
+            "roc_auc_drop": -0.0007543465343976541,
+            "drift_detected": true,
+            "performance_guardrail_breached": false,
+            "decision": "MONITOR_NO_AUTOMATIC_RETRAINING"
+        }
+    ],
+    "limitations": [
+        "All feature shifts are synthetic.",
+        "Original test labels are retained after feature transformations.",
+        "The guardrail values are experimental choices.",
+        "A retraining candidate must be evaluated separately before deployment."
+    ]
+}

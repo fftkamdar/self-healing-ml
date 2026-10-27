@@ -1,0 +1,12 @@
+
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.git/
+.vscode/
+.streamlit/secrets.toml
+.env
+.env.*
+*.bak
+*.backup

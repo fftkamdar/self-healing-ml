@@ -1,0 +1,6 @@
+Model,Meaningful_Features,Low_or_Unclear_Features,Top_5_Features
+Decision Tree,11,8,"Contract, tenure, TotalCharges, InternetService, MonthlyCharges"
+Gradient Boosting,13,6,"Contract, tenure, TotalCharges, MonthlyCharges, TechSupport"
+Logistic Regression,15,4,"tenure, InternetService, Contract, MonthlyCharges, TotalCharges"
+Random Forest,5,14,"Contract, tenure, InternetService, TotalCharges, DeviceProtection"
+Support Vector Machine,10,9,"Contract, tenure, InternetService, TotalCharges, SeniorCitizen"

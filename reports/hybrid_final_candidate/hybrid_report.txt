@@ -1,0 +1,25 @@
+SH-DAS HYBRID FINAL CANDIDATE
+================================================================================
+
+Logistic Regression component: LR_ModerateBalance
+Gradient Boosting component: GB_Conservative
+LR weight: 0.0500
+GB weight: 0.9500
+Threshold: 0.3400
+
+FINAL TEST METRICS
+--------------------------------------------------------------------------------
+Accuracy: 0.764372 (canonical maximum: 0.791341)
+Precision: 0.541667 (canonical maximum: 0.639860)
+Recall: 0.729947 (canonical maximum: 0.810160)
+F1-score: 0.621868 (canonical maximum: 0.624742)
+ROC-AUC: 0.836834 (canonical maximum: 0.835577)
+
+Dominance: 1/5
+Beats all five: NO
+
+Hybrid vs V9 dominance: 1/5
+
+DECISION
+--------------------------------------------------------------------------------
+HYBRID CANDIDATE DOES NOT ACHIEVE ALL-FIVE METRIC DOMINANCE.

@@ -1,0 +1,35 @@
+SELF-HEALING ML - OPTUNA TUNING REPORT
+==================================================
+Dataset: Telco-Customer-Churn.csv
+Total rows: 7043
+Optuna trials: 30
+Optimization objective: Validation ROC-AUC
+Best validation ROC-AUC: 0.8487
+
+Best hyperparameters:
+- C: 13.254766368928319
+- class_weight: balanced
+
+Held-out test metrics:
+- Accuracy: 0.7395
+- Precision: 0.5060
+- Recall: 0.7834
+- F1-score: 0.6149
+- ROC-AUC: 0.8405
+
+Classification report:
+              precision    recall  f1-score   support
+
+    No Churn       0.90      0.72      0.80      1035
+       Churn       0.51      0.78      0.61       374
+
+    accuracy                           0.74      1409
+   macro avg       0.70      0.75      0.71      1409
+weighted avg       0.80      0.74      0.75      1409
+
+
+Methodology notes:
+- The test set was held out from hyperparameter selection.
+- Preprocessing was fitted within each training pipeline.
+- This experiment uses the original dataset, not live data.
+- Hyperparameter tuning does not guarantee improved performance.

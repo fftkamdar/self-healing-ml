@@ -1,0 +1,28 @@
+SH-DAS V8 PERFORMANCE SEARCH
+==========================================================================================
+
+Selected candidate: SH-DAS V8 Stacking
+Threshold: 0.63
+
+Existing-model maxima on the same held-out test set:
+  Accuracy: 0.799858
+  Precision: 0.660839
+  Recall: 0.791444
+  F1-score: 0.614256
+  ROC-AUC: 0.841980
+
+V8 test performance:
+  Accuracy: 0.777147
+  Precision: 0.564935
+  Recall: 0.697861
+  F1-score: 0.624402
+  ROC-AUC: 0.843969
+
+Beat all five existing models:
+  Accuracy: NO
+  Precision: NO
+  Recall: NO
+  F1-score: YES
+  ROC-AUC: YES
+
+ALL FIVE METRICS PASSED: NO

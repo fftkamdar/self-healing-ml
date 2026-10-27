@@ -1,0 +1,36 @@
+{
+    "decision": "RETAIN_BASELINE",
+    "max_psi": 1.3907924332364288,
+    "drift_detected": true,
+    "high_drift_features": [
+        "MonthlyCharges",
+        "tenure"
+    ],
+    "moderate_drift_features": [],
+    "promotion_checks": {
+        "recall": {
+            "baseline": 0.6631016042780749,
+            "candidate": 0.7433155080213903,
+            "delta": 0.0802139037433155,
+            "passed": true
+        },
+        "f1": {
+            "baseline": 0.6294416243654822,
+            "candidate": 0.6123348017621145,
+            "delta": -0.01710682260336771,
+            "passed": false
+        },
+        "roc_auc": {
+            "baseline": 0.8433609315962257,
+            "candidate": 0.8404290463113993,
+            "delta": -0.002931885284826463,
+            "passed": false
+        }
+    },
+    "reasons": [
+        "Drift was detected and a candidate was evaluated.",
+        "The candidate failed one or more configured promotion checks.",
+        "Failed checks: f1, roc_auc.",
+        "Retain the baseline under the current promotion policy."
+    ]
+}

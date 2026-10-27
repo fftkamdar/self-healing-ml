@@ -1,0 +1,7 @@
+batch_number,row_count,max_psi,drift_detected,consecutive_drift_batches,high_drift_features,status
+1,235,0.0804451852579975,False,0,,NORMAL
+2,235,0.043644676750300884,False,0,,NORMAL
+3,235,0.2087831081906592,False,0,,NORMAL
+4,235,1.3023066947422097,True,1,"tenure, MonthlyCharges",DRIFT_OBSERVED
+5,235,1.4452191812907222,True,2,"tenure, MonthlyCharges",DRIFT_OBSERVED
+6,234,1.3112190950906724,True,3,"tenure, MonthlyCharges",PERSISTENT_DRIFT_ALERT

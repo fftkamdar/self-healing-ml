@@ -1,0 +1,55 @@
+{
+  "version": "V12",
+  "selected_model": "XGBoost_RecallFocused",
+  "selected_threshold": 0.6000000000000003,
+  "selected_parameters": {
+    "n_estimators": 450,
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "min_child_weight": 5,
+    "subsample": 0.9,
+    "colsample_bytree": 0.85,
+    "gamma": 0.05,
+    "reg_lambda": 6.0,
+    "reg_alpha": 0.1
+  },
+  "engineered_features": [
+    "AverageMonthlySpend",
+    "ServiceCount",
+    "IsMonthToMonth",
+    "FamilySupportCount",
+    "TenureChargeInteraction"
+  ],
+  "oof_selection": {
+    "Accuracy": 0.7887823926162584,
+    "Precision": 0.5851479620323842,
+    "Recall": 0.7010033444816054,
+    "F1-score": 0.6378575776019476,
+    "ROC-AUC": 0.8492693289462093
+  },
+  "test_metrics": {
+    "Accuracy": 0.7686302342086586,
+    "Precision": 0.5506329113924051,
+    "Recall": 0.6978609625668449,
+    "F1-score": 0.6155660377358491,
+    "ROC-AUC": 0.832732697822212
+  },
+  "reference_metrics": {
+    "Accuracy": 0.8013,
+    "Precision": 0.6679,
+    "Recall": 0.7968,
+    "F1-score": 0.6179,
+    "ROC-AUC": 0.843
+  },
+  "v9_metrics": {
+    "Accuracy": 0.7864,
+    "Precision": 0.5855,
+    "Recall": 0.6684,
+    "F1-score": 0.6242,
+    "ROC-AUC": 0.8441
+  },
+  "dominance_count": 0,
+  "beats_all_five": false,
+  "v12_vs_v9_dominance": 1,
+  "runtime_seconds": 34.101064920425415
+}

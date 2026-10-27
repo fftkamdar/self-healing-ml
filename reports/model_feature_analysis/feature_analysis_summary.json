@@ -1,0 +1,14 @@
+{
+  "dataset": "IBM Telco Customer Churn",
+  "random_state": 42,
+  "test_size": 0.2,
+  "permutation_repeats": 10,
+  "models": [
+    "Decision Tree",
+    "Gradient Boosting",
+    "Logistic Regression",
+    "Random Forest",
+    "Support Vector Machine"
+  ],
+  "interpretation": "Meaningful Contribution means the permutation importance lower bound (mean minus standard deviation) was positive in this experiment. Low/Unclear Contribution does not mean that the model cannot technically use the feature."
+}

@@ -1,0 +1,15 @@
+{
+  "experiment": "Self-Healing Recovery Experiment",
+  "dataset": "IBM Telco Customer Churn",
+  "drift_features": [
+    "tenure",
+    "MonthlyCharges"
+  ],
+  "psi_threshold": 0.25,
+  "maximum_psi": 1.456384702027242,
+  "recovery_triggered": true,
+  "selected_threshold_before_recovery": 0.5400000000000003,
+  "selected_threshold_after_recovery": 0.2,
+  "same_final_evaluation_rows": true,
+  "evaluation_note": "Before and after recovery results use the same held-out evaluation records. Recovery uses training data plus labeled drifted adaptation data. Final evaluation data are not used during recovery."
+}

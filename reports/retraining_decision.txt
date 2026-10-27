@@ -1,0 +1,11 @@
+SELF-HEALING ML - RETRAINING DECISION
+=============================================
+
+Maximum PSI: 1.469107
+PSI threshold: 0.25
+Decision: Retraining experiment triggered
+Reason: Maximum feature PSI reached or exceeded the configured threshold.
+Training data: Original training set plus the shifted retraining subset.
+Evaluation data: Held-out shifted subset not used during retraining.
+
+This is a controlled simulation. PSI indicates distribution change and does not by itself establish that model performance has degraded. Results should be validated using representative production data and confirmed labels before operational deployment.

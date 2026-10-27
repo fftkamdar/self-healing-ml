@@ -1,0 +1,19 @@
+{
+  "model_name": "SH-DAE",
+  "full_name": "Self-Healing Drift-Aware Ensemble",
+  "base_models": [
+    "Logistic Regression",
+    "Decision Tree",
+    "Random Forest",
+    "Gradient Boosting",
+    "Support Vector Machine"
+  ],
+  "random_state": 42,
+  "drift_penalty": 2.0,
+  "permutation_repeats": 7,
+  "drifted_features": [
+    "tenure",
+    "MonthlyCharges"
+  ],
+  "evaluation_note": "Final metrics are measured on a separate held-out drifted evaluation set. Adaptive weights are determined before final evaluation using training and adaptation data."
+}

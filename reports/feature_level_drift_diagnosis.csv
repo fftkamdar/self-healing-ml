@@ -1,0 +1,20 @@
+feature,psi,drift_level,method
+MonthlyCharges,2.1720537139841767,High,numeric quantile bins
+tenure,0.43102859418758965,High,numeric quantile bins
+TotalCharges,0.01271075439227623,Low,numeric quantile bins
+StreamingTV,0.006453894829839691,Low,categorical proportions
+MultipleLines,0.002005415348052791,Low,categorical proportions
+PhoneService,0.0018773791420193533,Low,categorical proportions
+TechSupport,0.0018354806473619549,Low,categorical proportions
+PaymentMethod,0.0016678043294587421,Low,categorical proportions
+Dependents,0.0016515639781352711,Low,categorical proportions
+Partner,0.001363517573714161,Low,categorical proportions
+DeviceProtection,0.0013436244168416865,Low,categorical proportions
+OnlineSecurity,0.0009237623323059804,Low,categorical proportions
+OnlineBackup,0.0008046590379373746,Low,categorical proportions
+InternetService,0.0007832907408492546,Low,categorical proportions
+StreamingMovies,0.0006845988414197412,Low,categorical proportions
+gender,0.00039565731894460987,Low,categorical proportions
+Contract,0.0003403798347178152,Low,categorical proportions
+PaperlessBilling,6.42858166228723e-05,Low,categorical proportions
+SeniorCitizen,2.5851055384705947e-09,Low,numeric quantile bins

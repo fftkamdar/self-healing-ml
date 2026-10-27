@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-09-24T13:06:05+05:30",
+  "decision": "RETAIN_PREVIOUS_MODEL",
+  "max_psi": 1.4944248852622886,
+  "top_drift_feature": "MonthlyCharges",
+  "tenure_multiplier": 1.5,
+  "monthly_charges_multiplier": 1.2,
+  "gates": {
+    "F1 gate": true,
+    "ROC-AUC gate": false,
+    "Recall improvement gate": true
+  },
+  "comparison": [
+    {
+      "Model": "Previous Baseline",
+      "Stage": "Drifted Evaluation",
+      "Accuracy": 0.7767265846736046,
+      "Precision": 0.5906040268456376,
+      "Recall": 0.6068965517241379,
+      "F1-score": 0.5986394557823129,
+      "ROC-AUC": 0.8304635166119677
+    },
+    {
+      "Model": "Adaptive Recovery Candidate",
+      "Stage": "Drifted Evaluation",
+      "Accuracy": 0.7379375591296121,
+      "Precision": 0.5154394299287411,
+      "Recall": 0.7482758620689656,
+      "F1-score": 0.6104078762306611,
+      "ROC-AUC": 0.8113024322258688
+    }
+  ],
+  "model_modified": false,
+  "model_deployed": false
+}

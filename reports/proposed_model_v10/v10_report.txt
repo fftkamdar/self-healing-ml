@@ -1,0 +1,25 @@
+SH-DAS V10 — FINAL REPORT
+================================================================================
+Selected model: CalibratedLinearSVM
+Threshold: 0.48
+
+FINAL TEST METRICS
+--------------------------------------------------------------------------------
+Accuracy: 0.784244 (existing reference: 0.801300)
+Precision: 0.601156 (existing reference: 0.667900)
+Recall: 0.556150 (existing reference: 0.796800)
+F1-score: 0.577778 (existing reference: 0.617900)
+ROC-AUC: 0.830071 (existing reference: 0.843000)
+
+DOMINANCE COUNT: 0/5
+BEATS ALL FIVE ON ALL FIVE METRICS: NO
+
+ENGINEERED FEATURES
+--------------------------------------------------------------------------------
+- AverageMonthlySpend
+- ServiceCount
+- IsMonthToMonth
+- FamilySupportCount
+- TenureChargeInteraction
+
+Runtime: 15.33 seconds

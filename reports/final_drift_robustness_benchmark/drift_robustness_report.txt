@@ -1,0 +1,29 @@
+SH-DAS FINAL DRIFT ROBUSTNESS BENCHMARK
+================================================================================
+
+PREDEFINED DRIFT
+tenure multiplier: 1.50
+MonthlyCharges multiplier: 1.20
+Maximum PSI: 1.162721
+
+SELECTED ADAPTIVE ENSEMBLE
+LR weight: 0.6000
+GB weight: 0.1000
+RF weight: 0.3000
+Threshold: 0.5700
+
+FINAL DRIFTED-TEST METRICS
+--------------------------------------------------------------------------------
+Accuracy: 0.772889 (frozen baseline max: 0.789922)
+Precision: 0.560000 (frozen baseline max: 0.623762)
+Recall: 0.673797 (frozen baseline max: 0.732620)
+F1-score: 0.611650 (frozen baseline max: 0.617813)
+ROC-AUC: 0.832866 (frozen baseline max: 0.836761)
+
+Dominance: 0/5
+Beats all frozen models on all five: NO
+
+F1 recovery gain: -0.006162
+ROC-AUC recovery gain: -0.003896
+
+Runtime: 84.95 seconds

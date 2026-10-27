@@ -1,0 +1,19 @@
+{
+  "experiment": "No-drift safeguard",
+  "threshold": 0.25,
+  "scenarios": [
+    {
+      "scenario": "No-drift control",
+      "max_psi": 0.023344950865727274,
+      "high_drift_features": "",
+      "decision": "SKIP_RETRAINING"
+    },
+    {
+      "scenario": "Synthetic drift",
+      "max_psi": 2.1720537139841767,
+      "high_drift_features": "tenure, MonthlyCharges",
+      "decision": "RETRAINING_CONSIDERED"
+    }
+  ],
+  "interpretation": "The decision rule skips retraining below the PSI threshold and allows retraining to be considered at or above it. This is a simulated decision policy; it does not prove that retraining improves predictive performance."
+}

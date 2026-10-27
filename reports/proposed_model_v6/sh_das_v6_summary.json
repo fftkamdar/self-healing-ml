@@ -1,0 +1,41 @@
+{
+  "model_name": "SH-DAS V6",
+  "dataset": "C:\\Users\\DELL\\Desktop\\Self_Healing_ML\\data\\raw\\Telco-Customer-Churn.csv",
+  "dataset_records": 7043,
+  "feature_count": 19,
+  "training_records": 4225,
+  "adaptation_records": 1409,
+  "evaluation_records": 1409,
+  "meta_feature_count": 62,
+  "selected_candidate": "Meta Logistic C=0.03 weight=balanced",
+  "selected_threshold": 0.52,
+  "cv_f1_mean": 0.6539467886204318,
+  "cv_auc_mean": 0.8317578448013231,
+  "cv_recall_mean": 0.7646126126126126,
+  "final_metrics": {
+    "Accuracy": 0.6593328601845281,
+    "Precision": 0.43274111675126903,
+    "Recall": 0.9117647058823529,
+    "F1-score": 0.5869191049913941,
+    "ROC-AUC": 0.8445968637784494
+  },
+  "metric_deltas": {
+    "Accuracy": -0.12136266855926181,
+    "Precision": -0.14162959263088204,
+    "Recall": 0.07219251336898391,
+    "F1-score": -0.04127179400971581,
+    "ROC-AUC": 0.0016714459169703266
+  },
+  "drift_transforms": {
+    "tenure": 1.5,
+    "MonthlyCharges": 1.2
+  },
+  "selection_rule": [
+    "5-fold stratified cross-validation on adaptation data",
+    "Primary objective: mean adaptation F1-score",
+    "Tie-break: mean adaptation ROC-AUC",
+    "Final tie-break: mean adaptation Recall",
+    "Threshold optimized only using adaptation data",
+    "Final evaluation set kept untouched"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "version": "V11",
+  "selected_approach": "Stacking",
+  "selected_threshold": 0.6200000000000003,
+  "engineered_features": [
+    "AverageMonthlySpend",
+    "ServiceCount",
+    "IsMonthToMonth",
+    "FamilySupportCount",
+    "TenureChargeInteraction"
+  ],
+  "test_metrics": {
+    "Accuracy": 0.7750177430801988,
+    "Precision": 0.5634743875278396,
+    "Recall": 0.6764705882352942,
+    "F1-score": 0.6148238153098421,
+    "ROC-AUC": 0.8334082513110646
+  },
+  "reference_metrics": {
+    "Accuracy": 0.8013,
+    "Precision": 0.6679,
+    "Recall": 0.7968,
+    "F1-score": 0.6179,
+    "ROC-AUC": 0.843
+  },
+  "v9_metrics": {
+    "Accuracy": 0.7864,
+    "Precision": 0.5855,
+    "Recall": 0.6684,
+    "F1-score": 0.6242,
+    "ROC-AUC": 0.8441
+  },
+  "dominance_count": 0,
+  "beats_all_five": false,
+  "v11_vs_v9_dominance": 1,
+  "xgboost_available": false,
+  "train_size": 4225,
+  "validation_size": 1409,
+  "test_size": 1409,
+  "runtime_seconds": 93.19978189468384
+}

@@ -1,0 +1,37 @@
+SH-DAS V6 — FINAL REPORT
+===========================================================================
+
+Dataset: C:\Users\DELL\Desktop\Self_Healing_ML\data\raw\Telco-Customer-Churn.csv
+Dataset records: 7043
+Features: 19
+Training records: 4225
+Adaptation records: 1409
+Evaluation records: 1409
+
+Selected candidate:
+  Meta Logistic C=0.03 weight=balanced
+Threshold: 0.52
+
+Final SH-DAS V6 metrics:
+  Accuracy: 0.659333
+  Precision: 0.432741
+  Recall: 0.911765
+  F1-score: 0.586919
+  ROC-AUC: 0.844597
+
+Comparison:
+              Model         Type  Threshold  Accuracy  Precision   Recall  F1-score  ROC-AUC
+Logistic Regression Conventional       0.44  0.767211   0.546559 0.721925  0.622120 0.842925
+      Decision Tree Conventional       0.31  0.656494   0.425474 0.839572  0.564748 0.783904
+      Random Forest Conventional       0.54  0.779276   0.571754 0.671123  0.617466 0.837796
+  Gradient Boosting Conventional       0.34  0.780696   0.574371 0.671123  0.618989 0.835192
+                SVM Conventional       0.28  0.762243   0.537002 0.756684  0.628191 0.826020
+          SH-DAS V6     Proposed       0.52  0.659333   0.432741 0.911765  0.586919 0.844597
+
+Metric deltas vs best conventional:
+   Metric  Best_Conventional  SH_DAS_V6  V6_minus_Best_Conventional
+ Accuracy           0.780696   0.659333                   -0.121363
+Precision           0.574371   0.432741                   -0.141630
+   Recall           0.839572   0.911765                    0.072193
+ F1-score           0.628191   0.586919                   -0.041272
+  ROC-AUC           0.842925   0.844597                    0.001671

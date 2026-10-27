@@ -1,0 +1,36 @@
+SELF-HEALING ML - DRIFT MONITOR REPORT
+==================================================
+
+Experiment: Controlled simulated feature drift
+Dataset: IBM Telco Customer Churn sample
+Reference: 80% training split
+Current: 20% test split with selected shifts
+Modified features: tenure, MonthlyCharges
+
+FEATURE-LEVEL RESULTS
+         feature      psi     status                method
+  MonthlyCharges 1.469107 High drift Numeric quantile bins
+          tenure 0.411727 High drift Numeric quantile bins
+    TotalCharges 0.008600  Low drift Numeric quantile bins
+    OnlineBackup 0.004434  Low drift Categorical frequency
+   MultipleLines 0.003021  Low drift Categorical frequency
+     StreamingTV 0.002794  Low drift Categorical frequency
+    PhoneService 0.001683  Low drift Categorical frequency
+ StreamingMovies 0.001028  Low drift Categorical frequency
+     TechSupport 0.000777  Low drift Categorical frequency
+DeviceProtection 0.000445  Low drift Categorical frequency
+   PaymentMethod 0.000404  Low drift Categorical frequency
+          gender 0.000367  Low drift Categorical frequency
+  OnlineSecurity 0.000338  Low drift Categorical frequency
+      Dependents 0.000295  Low drift Categorical frequency
+ InternetService 0.000236  Low drift Categorical frequency
+         Partner 0.000182  Low drift Categorical frequency
+        Contract 0.000144  Low drift Categorical frequency
+PaperlessBilling 0.000101  Low drift Categorical frequency
+   SeniorCitizen 0.000000  Low drift Numeric quantile bins
+
+Maximum feature PSI: 1.4691072676942367
+Overall drift indicator: High drift
+
+Interpretation:
+PSI measures changes in feature distributions. It does not directly measure model predictive performance. The current dataset was deliberately modified for this controlled experiment. Drift thresholds are heuristic guidelines and should be validated for the application.

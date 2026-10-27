@@ -1,0 +1,73 @@
+{
+  "version": "V15",
+  "selected_model": "LGBM_PrecisionBalanced",
+  "selected_threshold": 0.3150000000000001,
+  "selected_parameters": {
+    "n_estimators": 500,
+    "learning_rate": 0.03,
+    "num_leaves": 12,
+    "max_depth": 4,
+    "min_child_samples": 35,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "reg_alpha": 0.15,
+    "reg_lambda": 7.0,
+    "class_weight": {
+      "0": 1.0,
+      "1": 0.9
+    }
+  },
+  "categorical_features": [
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "engineered_features": [
+    "AverageMonthlySpend",
+    "TenureChargeInteraction",
+    "IsMonthToMonth",
+    "ServiceCount",
+    "FamilySupportCount"
+  ],
+  "test_metrics": {
+    "Accuracy": 0.759403832505323,
+    "Precision": 0.5359342915811088,
+    "Recall": 0.6978609625668449,
+    "F1-score": 0.6062717770034843,
+    "ROC-AUC": 0.8299956082564779
+  },
+  "canonical_reference": {
+    "Accuracy": 0.791341,
+    "Precision": 0.63986,
+    "Recall": 0.81016,
+    "F1-score": 0.624742,
+    "ROC-AUC": 0.835577
+  },
+  "v9_reference": {
+    "Accuracy": 0.7864,
+    "Precision": 0.5855,
+    "Recall": 0.6684,
+    "F1-score": 0.6242,
+    "ROC-AUC": 0.8441
+  },
+  "dominance_count": 0,
+  "beats_all_five": false,
+  "v15_vs_v9_dominance": 1,
+  "train_size": 4225,
+  "validation_size": 1409,
+  "development_size": 5634,
+  "test_size": 1409,
+  "runtime_seconds": 30.231323719024658
+}

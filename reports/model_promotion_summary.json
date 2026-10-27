@@ -1,0 +1,53 @@
+{
+    "experiment": "Model Promotion Gate",
+    "random_state": 42,
+    "training_rows": 5634,
+    "adaptation_rows": 704,
+    "evaluation_rows": 705,
+    "required_metrics": [
+        "recall",
+        "f1",
+        "roc_auc"
+    ],
+    "baseline_metrics": {
+        "accuracy": 0.7929078014184398,
+        "precision": 0.5990338164251208,
+        "recall": 0.6631016042780749,
+        "f1": 0.6294416243654822,
+        "roc_auc": 0.8433609315962257
+    },
+    "candidate_metrics": {
+        "accuracy": 0.750354609929078,
+        "precision": 0.5205992509363296,
+        "recall": 0.7433155080213903,
+        "f1": 0.6123348017621145,
+        "roc_auc": 0.8404290463113993
+    },
+    "gate_results": {
+        "recall": {
+            "baseline": 0.6631016042780749,
+            "candidate": 0.7433155080213903,
+            "passed": true
+        },
+        "f1": {
+            "baseline": 0.6294416243654822,
+            "candidate": 0.6123348017621145,
+            "passed": false
+        },
+        "roc_auc": {
+            "baseline": 0.8433609315962257,
+            "candidate": 0.8404290463113993,
+            "passed": false
+        }
+    },
+    "all_gates_passed": false,
+    "decision": "RETAIN_BASELINE",
+    "selected_model_path": "C:\\Users\\DELL\\Desktop\\Self_Healing_ML\\models\\selected_churn_pipeline.joblib",
+    "limitations": [
+        "Feature transformations are synthetic.",
+        "Original labels are retained after transformation.",
+        "Promotion criteria are illustrative and not production standards.",
+        "Evaluation uses one held-out partition.",
+        "This experiment does not establish real-world model performance."
+    ]
+}

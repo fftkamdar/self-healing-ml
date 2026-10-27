@@ -1,0 +1,20 @@
+Feature,Decision Tree,Gradient Boosting,Logistic Regression,Random Forest,Support Vector Machine
+Contract,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution
+Dependents,Low/Unclear Contribution,Low/Unclear Contribution,Low/Unclear Contribution,Low/Unclear Contribution,Meaningful Contribution
+DeviceProtection,Low/Unclear Contribution,Low/Unclear Contribution,Meaningful Contribution,Low/Unclear Contribution,Low/Unclear Contribution
+InternetService,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution
+MonthlyCharges,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Low/Unclear Contribution,Low/Unclear Contribution
+MultipleLines,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Low/Unclear Contribution,Low/Unclear Contribution
+OnlineBackup,Low/Unclear Contribution,Low/Unclear Contribution,Meaningful Contribution,Low/Unclear Contribution,Low/Unclear Contribution
+OnlineSecurity,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution
+PaperlessBilling,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Low/Unclear Contribution,Low/Unclear Contribution
+Partner,Low/Unclear Contribution,Low/Unclear Contribution,Low/Unclear Contribution,Low/Unclear Contribution,Low/Unclear Contribution
+PaymentMethod,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Low/Unclear Contribution,Low/Unclear Contribution
+PhoneService,Meaningful Contribution,Meaningful Contribution,Low/Unclear Contribution,Low/Unclear Contribution,Meaningful Contribution
+SeniorCitizen,Low/Unclear Contribution,Meaningful Contribution,Meaningful Contribution,Low/Unclear Contribution,Meaningful Contribution
+StreamingMovies,Low/Unclear Contribution,Meaningful Contribution,Meaningful Contribution,Low/Unclear Contribution,Low/Unclear Contribution
+StreamingTV,Low/Unclear Contribution,Low/Unclear Contribution,Meaningful Contribution,Low/Unclear Contribution,Meaningful Contribution
+TechSupport,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Low/Unclear Contribution,Meaningful Contribution
+TotalCharges,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution
+gender,Low/Unclear Contribution,Low/Unclear Contribution,Low/Unclear Contribution,Low/Unclear Contribution,Low/Unclear Contribution
+tenure,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution,Meaningful Contribution

@@ -1,0 +1,66 @@
+{
+    "experiment": "Integrated Self-Healing ML Pipeline",
+    "dataset": "Telco-Customer-Churn.csv",
+    "scenario": "controlled_synthetic_covariate_shift",
+    "random_state": 42,
+    "psi_threshold": 0.25,
+    "synthetic_drift": {
+        "tenure_multiplier": 1.5,
+        "monthly_charges_multiplier": 1.2
+    },
+    "partition_sizes": {
+        "training": 5634,
+        "adaptation": 704,
+        "evaluation": 705
+    },
+    "max_psi": 1.3907924332364288,
+    "high_drift_features": [
+        "MonthlyCharges",
+        "tenure"
+    ],
+    "drift_detected": true,
+    "retraining_considered": true,
+    "baseline_metrics": {
+        "accuracy": 0.7929078014184398,
+        "precision": 0.5990338164251208,
+        "recall": 0.6631016042780749,
+        "f1": 0.6294416243654822,
+        "roc_auc": 0.8433609315962257
+    },
+    "candidate_metrics": {
+        "accuracy": 0.750354609929078,
+        "precision": 0.5205992509363296,
+        "recall": 0.7433155080213903,
+        "f1": 0.6123348017621145,
+        "roc_auc": 0.8404290463113993
+    },
+    "promotion_checks": {
+        "recall": {
+            "baseline": 0.6631016042780749,
+            "candidate": 0.7433155080213903,
+            "delta": 0.0802139037433155,
+            "passed": true
+        },
+        "f1": {
+            "baseline": 0.6294416243654822,
+            "candidate": 0.6123348017621145,
+            "delta": -0.01710682260336771,
+            "passed": false
+        },
+        "roc_auc": {
+            "baseline": 0.8433609315962257,
+            "candidate": 0.8404290463113993,
+            "delta": -0.002931885284826463,
+            "passed": false
+        }
+    },
+    "final_decision": "RETAIN_BASELINE",
+    "selected_model": "baseline",
+    "limitations": [
+        "Drift is synthetically generated, not observed in production.",
+        "The original labels are retained after feature modification.",
+        "PSI detects distribution change, not proof of performance degradation.",
+        "The promotion gate uses recall, F1, and ROC-AUC only.",
+        "Results apply to this dataset, split, and synthetic scenario."
+    ]
+}

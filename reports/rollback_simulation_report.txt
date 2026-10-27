@@ -1,0 +1,30 @@
+MODEL REGISTRY AND ROLLBACK SIMULATION
+======================================================================
+
+Promotion gate result: RETAIN_BASELINE
+Final action: ROLLBACK_TO_BASELINE
+Selected model version: v1
+Selected artifact: C:\Users\DELL\Desktop\Self_Healing_ML\models\integrated_selected_model.joblib
+
+Baseline metrics:
+  recall: 0.6631
+  f1: 0.6294
+  roc_auc: 0.8434
+
+Candidate metrics:
+  recall: 0.7433
+  f1: 0.6123
+  roc_auc: 0.8404
+
+Explanation:
+The candidate did not pass the configured promotion gate. The baseline is retained as the selected model.
+
+Limitations:
+- This is a local file-based registry simulation.
+- It does not provide production access control or audit infrastructure.
+- The selected model is copied to a separate artifact path.
+- Promotion depends on the configured metrics and integrated summary.
+- This experiment does not establish production readiness.
+
+Registry JSON: C:\Users\DELL\Desktop\Self_Healing_ML\reports\model_registry.json
+Selected model artifact: C:\Users\DELL\Desktop\Self_Healing_ML\models\integrated_selected_model.joblib

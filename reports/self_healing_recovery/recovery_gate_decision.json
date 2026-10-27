@@ -1,0 +1,23 @@
+{
+  "recovery_decision": "RETAIN_PREVIOUS_SH_DAS",
+  "selected_stage": "Before Recovery",
+  "f1_gate": false,
+  "roc_auc_gate": false,
+  "recall_improved": false,
+  "f1_improved": false,
+  "before_recovery": {
+    "Accuracy": 0.751596877217885,
+    "Precision": 0.5234375,
+    "Recall": 0.7165775401069518,
+    "F1-score": 0.6049661399548533,
+    "ROC-AUC": 0.8331408716319202
+  },
+  "after_recovery": {
+    "Accuracy": 0.7430801987224982,
+    "Precision": 0.5140845070422535,
+    "Recall": 0.5855614973262032,
+    "F1-score": 0.5475,
+    "ROC-AUC": 0.7893939393939393
+  },
+  "reason": "Recovered SH-DAS did not satisfy the performance gate. The previous SH-DAS model is retained to prevent harmful model replacement."
+}

@@ -1,0 +1,14 @@
+Metric,Value
+Scenario count,8
+Full-policy retrain count,5
+Feature-aware retrain count,4
+Retraining frequency reduction (%),19.999999999999996
+Estimated training time saved (%),19.71116547681132
+Avoided full-retrain time (sec),0.06110549997538328
+Unnecessary full retrains avoided,1
+Possible missed retraining opportunities,0
+Full retraining training time (sec),0.31000449997372925
+Selective retraining training time (sec),0.28048580000177026
+PSI threshold,0.25
+Contribution threshold,0.03
+Low-contribution feature used,TotalCharges

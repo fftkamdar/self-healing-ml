@@ -1,0 +1,36 @@
+SH-DAS V7 — FINAL REPORT
+===========================================================================
+
+Dataset: C:\Users\DELL\Desktop\Self_Healing_ML\data\raw\Telco-Customer-Churn.csv
+Dataset records: 7043
+Feature count: 19
+Training records: 4225
+Adaptation records: 1409
+Evaluation records: 1409
+
+Selected V7 strategy:
+{'model_name': 'SH-DAS V7', 'base_models': ['Logistic Regression', 'SVM', 'Gradient Boosting'], 'weights': {'Logistic Regression': 0.1, 'SVM': 0.4, 'Gradient Boosting': 0.5}, 'focus_model': 'Logistic Regression', 'drift_strength': 0.6, 'threshold': 0.47, 'adaptation_metrics': {'Accuracy': 0.830376153300213, 'Precision': 0.6901408450704225, 'Recall': 0.6550802139037433, 'F1-score': 0.6721536351165981, 'ROC-AUC': 0.8581660595727092}, 'final_metrics': {'Accuracy': 0.8026969481902059, 'Precision': 0.6340782122905028, 'Recall': 0.606951871657754, 'F1-score': 0.6202185792349727, 'ROC-AUC': 0.8491009842672247}, 'selection_rule': ['5-fold adaptation cross-validation', 'Primary objective: adaptation F1-score', 'Tie-break: adaptation ROC-AUC', 'Final tie-break: adaptation Recall', 'Threshold selected from adaptation OOF predictions', 'Final evaluation set never used for selection']}
+
+Final metrics:
+  Accuracy: 0.802697
+  Precision: 0.634078
+  Recall: 0.606952
+  F1-score: 0.620219
+  ROC-AUC: 0.849101
+
+Final comparison:
+              Model         Type  Threshold  Accuracy  Precision   Recall  F1-score  ROC-AUC
+Logistic Regression Conventional       0.47  0.777147   0.566964 0.679144  0.618005 0.840333
+      Decision Tree Conventional       0.66  0.775727   0.562500 0.697861  0.622912 0.804120
+      Random Forest Conventional       0.48  0.772179   0.553971 0.727273  0.628902 0.842409
+  Gradient Boosting Conventional       0.28  0.765082   0.540797 0.762032  0.632630 0.846598
+                SVM Conventional       0.39  0.792051   0.598540 0.657754  0.626752 0.834562
+          SH-DAS V7     Proposed       0.47  0.802697   0.634078 0.606952  0.620219 0.849101
+
+Deltas vs best conventional:
+   Metric  Best_Conventional  SH_DAS_V7  V7_minus_Best
+ Accuracy           0.792051   0.802697       0.010646
+Precision           0.598540   0.634078       0.035538
+   Recall           0.762032   0.606952      -0.155080
+ F1-score           0.632630   0.620219      -0.012412
+  ROC-AUC           0.846598   0.849101       0.002503

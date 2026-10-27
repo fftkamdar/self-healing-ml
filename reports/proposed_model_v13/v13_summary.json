@@ -1,0 +1,41 @@
+{
+  "version": "V13",
+  "selected_approach": "GB_Conservative",
+  "selected_threshold": 0.34000000000000014,
+  "engineered_features": [
+    "AverageMonthlySpend",
+    "TenureChargeInteraction",
+    "IsMonthToMonth",
+    "ServiceCount",
+    "FamilySupportCount"
+  ],
+  "test_metrics": {
+    "Accuracy": 0.7672107877927609,
+    "Precision": 0.5465587044534413,
+    "Recall": 0.7219251336898396,
+    "F1-score": 0.6221198156682027,
+    "ROC-AUC": 0.8356092898292385
+  },
+  "canonical_reference": {
+    "Accuracy": 0.791341,
+    "Precision": 0.63986,
+    "Recall": 0.81016,
+    "F1-score": 0.624742,
+    "ROC-AUC": 0.835577
+  },
+  "v9_reference": {
+    "Accuracy": 0.7864,
+    "Precision": 0.5855,
+    "Recall": 0.6684,
+    "F1-score": 0.6242,
+    "ROC-AUC": 0.8441
+  },
+  "dominance_count": 1,
+  "beats_all_five": false,
+  "v13_vs_v9_dominance": 1,
+  "train_size": 4225,
+  "validation_size": 1409,
+  "development_size": 5634,
+  "test_size": 1409,
+  "runtime_seconds": 43.236953020095825
+}

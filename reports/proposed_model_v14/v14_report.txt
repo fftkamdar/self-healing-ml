@@ -1,0 +1,46 @@
+SH-DAS V14 FINAL REPORT
+================================================================================
+
+Selected model: CatBoost_PrecisionBalanced
+Threshold: 0.38
+
+FINAL TEST METRICS
+--------------------------------------------------------------------------------
+Accuracy: 0.758694 (canonical maximum: 0.791341)
+Precision: 0.534274 (canonical maximum: 0.639860)
+Recall: 0.708556 (canonical maximum: 0.810160)
+F1-score: 0.609195 (canonical maximum: 0.624742)
+ROC-AUC: 0.832371 (canonical maximum: 0.835577)
+
+Dominance: 0/5
+Beats all five: NO
+
+V14 vs V9 dominance: 1/5
+
+ENGINEERED FEATURES
+--------------------------------------------------------------------------------
+- AverageMonthlySpend
+- TenureChargeInteraction
+- IsMonthToMonth
+- ServiceCount
+- FamilySupportCount
+
+NATIVE CATEGORICAL FEATURES
+--------------------------------------------------------------------------------
+- gender
+- Partner
+- Dependents
+- PhoneService
+- MultipleLines
+- InternetService
+- OnlineSecurity
+- OnlineBackup
+- DeviceProtection
+- TechSupport
+- StreamingTV
+- StreamingMovies
+- Contract
+- PaperlessBilling
+- PaymentMethod
+
+Runtime: 390.25 seconds

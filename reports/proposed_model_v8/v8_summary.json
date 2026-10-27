@@ -1,0 +1,35 @@
+{
+  "model": "SH-DAS V8",
+  "selected_candidate": "SH-DAS V8 Stacking",
+  "threshold": 0.6300000000000003,
+  "validation_metrics": {
+    "Accuracy": 0.7955997161107168,
+    "Precision": 0.5981735159817352,
+    "Recall": 0.7005347593582888,
+    "F1-score": 0.645320197044335,
+    "ROC-AUC": 0.8406145857552507
+  },
+  "test_metrics": {
+    "Accuracy": 0.7771469127040455,
+    "Precision": 0.564935064935065,
+    "Recall": 0.6978609625668449,
+    "F1-score": 0.6244019138755981,
+    "ROC-AUC": 0.8439691027926323
+  },
+  "existing_model_maxima": {
+    "Accuracy": 0.7998580553584103,
+    "Precision": 0.6608391608391608,
+    "Recall": 0.7914438502673797,
+    "F1-score": 0.6142557651991615,
+    "ROC-AUC": 0.8419799013149397
+  },
+  "beats_all_existing_models": {
+    "Accuracy": false,
+    "Precision": false,
+    "Recall": false,
+    "F1-score": true,
+    "ROC-AUC": true
+  },
+  "all_metrics_beat_all_five": false,
+  "experiment_note": "V8 candidate selection used training and validation data only. The final comparison uses the untouched held-out test set."
+}

@@ -1,0 +1,36 @@
+{
+  "selected_meta_model": "Meta_LR",
+  "variant": "raw",
+  "threshold": 0.34,
+  "engineered_feature_count": 36,
+  "final_metrics": {
+    "Accuracy": 0.7707594038325053,
+    "Precision": 0.5527950310559007,
+    "Recall": 0.713903743315508,
+    "F1-score": 0.6231038506417736,
+    "ROC-AUC": 0.8381539176935595
+  },
+  "canonical_reference": {
+    "Accuracy": 0.791341,
+    "Precision": 0.63986,
+    "Recall": 0.81016,
+    "F1-score": 0.624742,
+    "ROC-AUC": 0.835577
+  },
+  "super_learner_reference": {
+    "Accuracy": 0.7779,
+    "Precision": 0.5616,
+    "Recall": 0.7433,
+    "F1-score": 0.6398,
+    "ROC-AUC": 0.8461
+  },
+  "canonical_dominance": 1,
+  "beats_all_five": false,
+  "refinement_vs_super_learner": 0,
+  "train_size": 4225,
+  "validation_size": 1409,
+  "development_size": 5634,
+  "test_size": 1409,
+  "folds": 4,
+  "runtime_seconds": 71.26622414588928
+}

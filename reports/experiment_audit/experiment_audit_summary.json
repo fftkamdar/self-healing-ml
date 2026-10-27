@@ -1,0 +1,93 @@
+{
+  "versions_found": [
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12"
+  ],
+  "history": [
+    {
+      "version": "V8",
+      "metrics": {
+        "Accuracy": 0.7771469127040455,
+        "Precision": 0.564935064935065,
+        "Recall": 0.6978609625668449,
+        "F1-score": 0.6244019138755981,
+        "ROC-AUC": 0.8439691027926323
+      }
+    },
+    {
+      "version": "V9",
+      "metrics": {
+        "Accuracy": 0.7863733144073811,
+        "Precision": 0.585480093676815,
+        "Recall": 0.6684491978609626,
+        "F1-score": 0.6242197253433208,
+        "ROC-AUC": 0.8440776046914154
+      }
+    },
+    {
+      "version": "V10",
+      "metrics": {
+        "Accuracy": 0.7842441447835344,
+        "Precision": 0.6011560693641619,
+        "Recall": 0.5561497326203209,
+        "F1-score": 0.5777777777777777,
+        "ROC-AUC": 0.8300705262342091
+      }
+    },
+    {
+      "version": "V11",
+      "metrics": {
+        "Accuracy": 0.7750177430801988,
+        "Precision": 0.5634743875278396,
+        "Recall": 0.6764705882352942,
+        "F1-score": 0.6148238153098421,
+        "ROC-AUC": 0.8334082513110646
+      }
+    },
+    {
+      "version": "V12",
+      "metrics": {
+        "Accuracy": 0.7686302342086586,
+        "Precision": 0.5506329113924051,
+        "Recall": 0.6978609625668449,
+        "F1-score": 0.6155660377358491,
+        "ROC-AUC": 0.832732697822212
+      }
+    }
+  ],
+  "reference_sets": [
+    {
+      "version": "V10",
+      "reference": {
+        "Accuracy": 0.8013,
+        "Precision": 0.6679,
+        "Recall": 0.7968,
+        "F1-score": 0.6179,
+        "ROC-AUC": 0.843
+      }
+    },
+    {
+      "version": "V11",
+      "reference": {
+        "Accuracy": 0.8013,
+        "Precision": 0.6679,
+        "Recall": 0.7968,
+        "F1-score": 0.6179,
+        "ROC-AUC": 0.843
+      }
+    },
+    {
+      "version": "V12",
+      "reference": {
+        "Accuracy": 0.8013,
+        "Precision": 0.6679,
+        "Recall": 0.7968,
+        "F1-score": 0.6179,
+        "ROC-AUC": 0.843
+      }
+    }
+  ]
+}

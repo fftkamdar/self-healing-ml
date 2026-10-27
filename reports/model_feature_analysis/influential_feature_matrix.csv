@@ -1,0 +1,20 @@
+Feature,Decision Tree,Gradient Boosting,Logistic Regression,Random Forest,Support Vector Machine
+Contract,True,True,True,True,True
+Dependents,False,False,False,False,True
+DeviceProtection,False,False,True,False,False
+InternetService,True,True,True,True,True
+MonthlyCharges,True,True,True,False,False
+MultipleLines,True,True,True,False,False
+OnlineBackup,False,False,True,False,False
+OnlineSecurity,True,True,True,True,True
+PaperlessBilling,True,True,True,False,False
+Partner,False,False,False,False,False
+PaymentMethod,True,True,True,False,False
+PhoneService,True,True,False,False,True
+SeniorCitizen,False,True,True,False,True
+StreamingMovies,False,True,True,False,False
+StreamingTV,False,False,True,False,True
+TechSupport,True,True,True,False,True
+TotalCharges,True,True,True,True,True
+gender,False,False,False,False,False
+tenure,True,True,True,True,True

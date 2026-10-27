@@ -1,0 +1,38 @@
+SH-DAS V9 — MULTI-OBJECTIVE PERFORMANCE SEARCH
+==========================================================================================
+
+Selected approach: Probability blend of Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, Support Vector Machine, HistGradientBoosting, AdaBoost
+Threshold: 0.48
+
+FINAL TEST METRICS
+Accuracy    : 0.786373
+Precision   : 0.585480
+Recall      : 0.668449
+F1-score    : 0.624220
+ROC-AUC     : 0.844078
+
+BEST EXISTING TEST VALUES
+Accuracy    : 0.801278
+Precision   : 0.667857
+Recall      : 0.796791
+F1-score    : 0.617940
+ROC-AUC     : 0.843038
+
+DOMINANCE CHECK
+Accuracy    : NO
+Precision   : NO
+Recall      : NO
+F1-score    : YES
+ROC-AUC     : YES
+
+DOMINANCE COUNT: 2/5
+ALL FIVE METRICS BEAT ALL FIVE MODELS: NO
+
+BLEND WEIGHTS
+Logistic Regression: 0.1071
+Decision Tree: 0.0726
+Random Forest: 0.1036
+Gradient Boosting: 0.0649
+Support Vector Machine: 0.0843
+HistGradientBoosting: 0.2183
+AdaBoost: 0.3451

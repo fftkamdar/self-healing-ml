@@ -1,0 +1,20 @@
+feature,psi,status,method
+MonthlyCharges,1.4691072676942367,High drift,Numeric quantile bins
+tenure,0.41172705460251413,High drift,Numeric quantile bins
+TotalCharges,0.008599541990379773,Low drift,Numeric quantile bins
+OnlineBackup,0.004434135417113292,Low drift,Categorical frequency
+MultipleLines,0.003021130358489459,Low drift,Categorical frequency
+StreamingTV,0.002794246278462544,Low drift,Categorical frequency
+PhoneService,0.0016832424035960914,Low drift,Categorical frequency
+StreamingMovies,0.0010278056681778675,Low drift,Categorical frequency
+TechSupport,0.0007770279321600501,Low drift,Categorical frequency
+DeviceProtection,0.00044481616279337026,Low drift,Categorical frequency
+PaymentMethod,0.00040446792105523115,Low drift,Categorical frequency
+gender,0.0003672219446859764,Low drift,Categorical frequency
+OnlineSecurity,0.000337980026333407,Low drift,Categorical frequency
+Dependents,0.00029450837083236863,Low drift,Categorical frequency
+InternetService,0.00023574227795943481,Low drift,Categorical frequency
+Partner,0.00018180434813747182,Low drift,Categorical frequency
+Contract,0.00014418832461827351,Low drift,Categorical frequency
+PaperlessBilling,0.00010099167116806929,Low drift,Categorical frequency
+SeniorCitizen,0.0,Low drift,Numeric quantile bins

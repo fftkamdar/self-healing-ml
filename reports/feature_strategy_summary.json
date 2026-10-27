@@ -1,0 +1,73 @@
+{
+  "experiment": "Feature-level drift diagnosis and strategy comparison",
+  "drift_type": "Controlled synthetic feature drift",
+  "reference_rows": 5634,
+  "adaptation_rows": 704,
+  "evaluation_rows": 705,
+  "psi_thresholds": {
+    "moderate": 0.1,
+    "high": 0.25
+  },
+  "high_drift_features": [
+    "MonthlyCharges",
+    "tenure"
+  ],
+  "selected_features_after_exclusion": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "TotalCharges"
+  ],
+  "results": [
+    {
+      "strategy": "A - Baseline, no retraining",
+      "evaluation_rows": 705,
+      "features_used": 19,
+      "accuracy": 0.7929078014184398,
+      "precision": 0.5990338164251208,
+      "recall": 0.6631016042780749,
+      "f1": 0.6294416243654822,
+      "roc_auc": 0.8433609315962257
+    },
+    {
+      "strategy": "B - Full retraining, all features",
+      "evaluation_rows": 705,
+      "features_used": 19,
+      "accuracy": 0.750354609929078,
+      "precision": 0.5205992509363296,
+      "recall": 0.7433155080213903,
+      "f1": 0.6123348017621145,
+      "roc_auc": 0.8404290463113993
+    },
+    {
+      "strategy": "C - Drift-aware exclusion",
+      "evaluation_rows": 705,
+      "features_used": 17,
+      "accuracy": 0.7177304964539007,
+      "precision": 0.47959183673469385,
+      "recall": 0.7540106951871658,
+      "f1": 0.5862785862785863,
+      "roc_auc": 0.825428943076002
+    }
+  ],
+  "limitations": [
+    "Feature drift is synthetically introduced.",
+    "Original labels are retained after feature transformation.",
+    "PSI measures distribution change, not predictive performance.",
+    "Excluding drifted features may remove useful information.",
+    "The experiment does not demonstrate live production recovery."
+  ]
+}

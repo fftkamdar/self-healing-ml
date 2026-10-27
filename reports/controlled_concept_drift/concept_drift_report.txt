@@ -1,0 +1,30 @@
+SH-DAS CONTROLLED CONCEPT-DRIFT STRESS TEST
+================================================================================
+
+IMPORTANT: This is a synthetic controlled benchmark.
+It is separate from the real IBM Telco Customer Churn experiment.
+
+Total records: 12,000
+Pre-drift training: 8,000
+Adaptation: 2,000
+Post-drift test: 2,000
+
+CONCEPT DRIFT
+--------------------------------------------------------------------------------
+Old churn rate: 0.561625
+New churn rate: 0.548000
+Target-rate change: -0.013625
+Self-healing trigger: ACTIVATED
+
+FINAL RESULTS
+--------------------------------------------------------------------------------
+Accuracy: 0.816500 (frozen maximum: 0.400500)
+Precision: 0.800851 (frozen maximum: 0.448445)
+Recall: 0.876164 (frozen maximum: 0.510242)
+F1-score: 0.836816 (frozen maximum: 0.477352)
+ROC-AUC: 0.898782 (frozen maximum: 0.343791)
+
+Dominance count: 5/5
+Better on all five: YES
+
+Runtime: 19.22 seconds

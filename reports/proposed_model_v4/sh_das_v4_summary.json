@@ -1,0 +1,24 @@
+{
+  "model_name": "SH-DAS V4",
+  "full_name": "Robust Self-Healing Drift-Aware Stacking",
+  "base_models": [
+    "Logistic Regression",
+    "Decision Tree",
+    "Random Forest",
+    "Gradient Boosting",
+    "Support Vector Machine"
+  ],
+  "meta_models_tested": [
+    "Meta Logistic Regression",
+    "Meta Random Forest",
+    "Meta HistGradientBoosting"
+  ],
+  "selected_meta_model": "Meta Random Forest",
+  "drifted_features": [
+    "tenure",
+    "MonthlyCharges"
+  ],
+  "selected_threshold": 0.5500000000000003,
+  "oof_folds": 5,
+  "evaluation_protocol": "Base models were trained using training data. Meta-training used out-of-fold predictions generated under controlled drift. Meta-model and threshold were selected using adaptation data. Final metrics were computed on a separate held-out drifted evaluation set."
+}
